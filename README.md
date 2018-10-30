@@ -89,7 +89,7 @@ Currently the following target platforms are supported:
 
 4.Clone (do not change the location below) and build the dependency library Casablanca (https://github.com/Microsoft/cpprestsdk).
 
-    cd odatacpp_client
+    cd odatacpp-client
     mkdir lib
     cd lib
     git clone https://github.com/Microsoft/cpprestsdk.git casablanca
