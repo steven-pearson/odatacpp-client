@@ -12,6 +12,7 @@ if(IOS)
   set(Boost_FRAMEWORK "-F ${IOS_SOURCE_DIR} -framework boost")
   set(Boost_INCLUDE_DIR "${IOS_SOURCE_DIR}/boost.framework/Headers")
 
+  set(OPENSSL_INCLUDE_DIR "/opt/local/include")
   set(LIBXML2_INCLUDE_DIR "/usr/include/libxml2")
   
   # The cxx_flags must be set here, because the ios-cmake toolchain file unfortunately sets "-headerpad_max_install_names" which is not a valid clang flag.
@@ -21,6 +22,8 @@ if(IOS)
 elseif(UNIX) # This includes OSX
   find_package(Boost REQUIRED COMPONENTS locale filesystem system thread)
   find_package(LibXml2 REQUIRED)
+
+  set(OPENSSL_INCLUDE_DIR "/usr/local/opt/openssl/include")
 
   option(BUILD_SHARED_LIBS "Build shared Libraries." ON)
 # elseif(WIN32)
@@ -77,10 +80,13 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/output)
 
 # These settings can be used by the test targets
 set(ODATACPP_LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+set(BOOST_LIB_DIR /usr/local/lib)
+set(BOOST_LIBRARIES ${BOOST_LIB_DIR}/libboost_system.dylib ${BOOST_LIB_DIR}/libboost_chrono.dylib ${BOOST_LIB_DIR}/libboost_thread-mt.dylib)
 set(Casablanca_LIBRARIES ${ODATACPP_LIB_DIR}/casablanca/build.release/Binaries/libcpprest.dylib)
+set(openssl_LIBRARIES /usr/local/opt/openssl/lib/libcrypto.dylib /usr/local/opt/openssl/lib/libssl.dylib)
 set(Casablanca_INCLUDE_DIR ${ODATACPP_LIB_DIR}/casablanca/Release/include)
 set(ODATACPP_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
-set(ODATACPP_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include ${Casablanca_INCLUDE_DIR} ${Boost_INCLUDE_DIR} ${LIBXML2_INCLUDE_DIR})
+set(ODATACPP_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include ${Casablanca_INCLUDE_DIR} ${Boost_INCLUDE_DIR} ${LIBXML2_INCLUDE_DIR} ${OPENSSL_INCLUDE_DIR})
 set(ODATACPP_TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/tests)
 
 # OData library targets

@@ -87,14 +87,14 @@ Currently the following target platforms are supported:
 
     brew install cmake git boost pkg-config
 
-4.Clone (do not change the location below) and build the dependency library Casablanca v2.1.0 (http://casablanca.codeplex.com).
+4.Clone (do not change the location below) and build the dependency library Casablanca (https://github.com/Microsoft/cpprestsdk).
 
     cd odatacpp_client
     mkdir lib
     cd lib
-    git clone https://git01.codeplex.com/casablanca
+    git clone https://github.com/Microsoft/cpprestsdk.git casablanca
     cd casablanca
-    git checkout v2.1.0
+    git submodule update --init
     mkdir build.release
     cd build.release
     cmake ../Release -DCMAKE_BUILD_TYPE=Release

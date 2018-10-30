@@ -37,7 +37,7 @@ namespace odata { namespace codegen {
 			ostr << iter->get_query_option_clause();	
 		}
 
-		return std::move(ostr.str());
+		return ostr.str();
 	}
 	else
 	{
@@ -96,7 +96,7 @@ namespace odata { namespace codegen {
 	if (!m_is_root && (m_query_options.size() > 0 || l_child_item))
 		ostr << U(")");
 
-	return std::move(ostr.str());
+	return ostr.str();
 }
 
 }}

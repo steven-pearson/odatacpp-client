@@ -533,7 +533,7 @@ odata_property_map odata_json_reader::handle_extract_entity_property(web::json::
         }
     }
 
-    return std::move(result);
+    return result;
 }
 
 odata_property_map odata_json_reader::handle_extract_complex_property(web::json::value& obj, std::shared_ptr<edm_complex_type>& complex_type)
@@ -664,7 +664,7 @@ odata_property_map odata_json_reader::handle_extract_complex_property(web::json:
         }
     }
 
-    return std::move(result);
+    return result;
 }
 
 std::shared_ptr<odata_collection_value> odata_json_reader::handle_extract_collection_property(std::shared_ptr<edm_named_type> type, web::json::value& value)

@@ -37,6 +37,8 @@ add_library(${ODATACPP_CLIENT} ${ODATACPP_CLIENT_SOURCES})
 
 target_link_libraries(${ODATACPP_CLIENT}
   ${Casablanca_LIBRARIES}
+  ${openssl_LIBRARIES}
+  ${BOOST_LIBRARIES}
   ${LIBXML2_LIBRARIES}
   ${EXTRALINKS}
   )

@@ -14,6 +14,14 @@
 #include "odata/communication/http_utility.h"
 #include "odata/core/odata_core.h"
 #include "odata/edm/odata_edm.h"
+
+#ifdef WIN32
+#include <Windows.h>
+#include "compat/windows_compat.h"
+#elif defined(__APPLE__)
+#include "compat/apple_compat.h"
+#endif
+
 #include "odata/edm/edm_model_reader.h"
 
 namespace odata { namespace client {

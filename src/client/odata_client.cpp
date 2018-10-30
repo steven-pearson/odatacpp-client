@@ -259,7 +259,7 @@ pplx::task<::web::http::status_code> odata_client::delete_entity(const ::utility
 	::utility::string_t accept = U("application/json");
 
 	return m_client_proxy->send_http_request(HTTP_DELETE, path, accept).then(
-      [this, entity_set_name] (const http::http_response& response) -> ::web::http::status_code
+      [entity_set_name] (const http::http_response& response) -> ::web::http::status_code
         {
             if (!http_utility::is_successful_status_code(response.status_code()))
             {
@@ -345,7 +345,7 @@ pplx::task<::web::http::status_code> odata_client::send_data_to_server(const ::u
 	::utility::string_t accept = U("application/json");
 
 	return m_client_proxy->send_http_request(send_type, path, accept).then(
-      [this] (const http::http_response& response) -> ::web::http::status_code
+      [] (const http::http_response& response) -> ::web::http::status_code
         {
             if (!http_utility::is_successful_status_code(response.status_code()))
             {
@@ -440,7 +440,7 @@ pplx::task<::web::http::status_code> odata_client::send_data_to_server(const ::u
 	auto ss = value_context.serialize();
 
 	return m_client_proxy->send_http_request(send_type, path, accept, value_context).then(
-      [this, send_value] (const http::http_response& response) -> ::web::http::status_code
+      [send_value] (const http::http_response& response) -> ::web::http::status_code
         {
             if (!http_utility::is_successful_status_code(response.status_code()))
             {

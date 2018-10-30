@@ -9,6 +9,13 @@
 #include "odata/common/utility.h"
 #include "cpprest/asyncrt_utils.h"
 
+#ifdef WIN32
+#include <Windows.h>
+#include "compat/windows_compat.h"
+#elif defined(__APPLE__)
+#include "compat/apple_compat.h"
+#endif
+
 namespace odata { namespace communication
 {
 

@@ -17,11 +17,20 @@
 #endif 
 
 #include <string>
-#include "cpprest/basic_types.h"
+#include "cpprest/details/basic_types.h"
 #include "cpprest/streams.h"
 #include "cpprest/containerstream.h"
 
 #include "odata/common/platform.h"
+
+#ifdef WIN32
+#include <Windows.h>
+#include "compat/windows_compat.h"
+#elif defined(__APPLE__)
+#include "compat/apple_compat.h"
+#endif
+
+
 
 namespace odata { namespace common {
 
