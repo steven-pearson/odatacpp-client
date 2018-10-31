@@ -137,7 +137,7 @@ Please refer to our [wiki](https://github.com/OData/odatacpp_client/wiki) for do
 
 # Community
 ## Contribution
-Please refer to the [CONTRIBUTION.md](https://github.com/OData/odatacpp_client/blob/master/CONTRIBUTING.md).
+Please refer to the [CONTRIBUTION.md](https://github.com/OData/odatacpp_client/CONTRIBUTING.md).
 ## Issue tracker
 To report bugs and require features, please use our [issue tracker](https://github.com/OData/odatacpp_client/issues?state=open).
 
