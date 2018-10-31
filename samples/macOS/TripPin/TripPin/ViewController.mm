@@ -33,15 +33,8 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
     
     auto service_context = std::make_shared<DefaultContainer>(service_root);
     
-    auto query = service_context->create_airlines_query();
-    try {
-        auto result = query->execute_query();
-    
-        airlines = result.get();
-        [self.tableView reloadData];
-    } catch (exception e) {
-        cout << e.what();
-    }
+    airlines = service_context->create_airlines_query()->execute_query().get();
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
