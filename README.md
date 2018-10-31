@@ -85,7 +85,7 @@ Currently the following target platforms are supported:
 
 3.Install the required packages to build odatacpp_client via Homebrew or your own package manager.
 
-    brew install cmake git boost pkg-config
+    brew install cmake git boost openssl ninja pkg-config 
 
 4.Clone (do not change the location below) and build the dependency library Casablanca (https://github.com/Microsoft/cpprestsdk).
 
