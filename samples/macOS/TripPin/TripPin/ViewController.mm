@@ -27,11 +27,6 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
 
 @implementation ViewController
 
--(void) bingTest
-{
-    
-}
-
 - (void) loadInitialData
 {
     ::utility::string_t service_root(U("https://services.odata.org/V4/(S(2ldtxpshdgzdinhcyq5mfstr))/TripPinServiceRW/"));
@@ -43,6 +38,7 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
         auto result = query->execute_query();
     
         airlines = result.get();
+        [self.tableView reloadData];
     } catch (exception e) {
         cout << e.what();
     }
@@ -50,8 +46,9 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    [self bingTest];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
     [self loadInitialData];
 }
 
@@ -61,6 +58,20 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
 
     // Update the view, if already loaded.
 }
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
+    return airlines.size();
+}
+
+- (NSView*)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    
+    auto airline = airlines[row];
+    cellView.textField.stringValue =  [NSString stringWithFormat:@"%s", airline->get_name().c_str()];
+    
+    return cellView;
+}
+
 
 
 @end
