@@ -143,11 +143,11 @@ To report bugs and require features, please use our [issue tracker](https://gith
 Please visit http://blogs.msdn.com/b/odatateam/.
 
 ## Contribution
-#How to contribute?
+# How to contribute?
 There are many ways for you to contribute to ODataCpp. The easiest way is to participate in discussion of features and issues. You can also contribute by sending pull requests of features or bug fixes to us. Contribution to the documentations at our [Wiki](https://github.com/OData/odatacpp/wiki) is also highly welcomed. 
-##Discussion
+## Discussion
 You can participate into discussions and ask questions about ODataCpp at our [Github issues](https://github.com/OData/odatacpp/issues). 
-###Bug reports
+### Bug reports
 When reporting a bug at the issue tracker, please use the following template:
 ```
 ### Description
@@ -166,16 +166,16 @@ When reporting a bug at the issue tracker, please use the following template:
 *Optional, details of the root cause if known*  
 ```
 
-##Pull requests
+## Pull requests
 Pull request of features and bug fixes are both welcomed. Before you send a pull request to us, there are a few steps you need to make sure you've followed. 
-###Complete a Contribution License Agreement (CLA)
+### Complete a Contribution License Agreement (CLA)
 You will need to complete a Contributor License Agreement (CLA). Briefly, this agreement testifies that you are granting us permission to use the submitted change according to the terms of the project's license, and that the work being submitted is under appropriate copyright.
 
 Please submit a Contributor License Agreement (CLA) before submitting a pull request. Download the agreement ([Microsoft Contribution License Agreement.pdf](https://github.com/odata/odatacpp/wiki/files/Microsoft Contribution License Agreement.pdf)), sign, scan, and email it back to [cla@microsoft.com](mailto:cla@microsoft.com). Be sure to include your Github user name along with the agreement. Only after we have received the signed CLA, we'll review the pull request that you send. You only need to do this once for contributing to any Microsoft open source projects. 
 
-###Create a new issue on the issue tracker and link the pull request to it
+### Create a new issue on the issue tracker and link the pull request to it
 You should have an issue created on the [issue tracker](https://github.com/OData/odatacpp/issues) before you work on the pull request. After the ODataCpp team has reviewed this issue and change its label to "accepting pull request", you can issue a pull request to us in which the link to the related issue is included.
-###Requirement of pull requests
+### Requirement of pull requests
 Your pull request should:
 
  - Include a description of what your change intends to do
