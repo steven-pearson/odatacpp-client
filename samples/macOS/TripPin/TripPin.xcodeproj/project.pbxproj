@@ -14,14 +14,16 @@
 		AA01770521899881006C8281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA01770321899881006C8281 /* Main.storyboard */; };
 		AA01771021899881006C8281 /* TripPinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA01770F21899881006C8281 /* TripPinTests.m */; };
 		AA01771B21899881006C8281 /* TripPinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA01771A21899881006C8281 /* TripPinUITests.m */; };
-		AA01772A218998BF006C8281 /* libodata-client.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA017729218998BF006C8281 /* libodata-client.1.0.dylib */; };
-		CAFA96362189FDBC0083BE7C /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96352189FDBC0083BE7C /* libboost_thread-mt.dylib */; };
-		CAFA96382189FE3C0083BE7C /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96372189FE3C0083BE7C /* libcrypto.dylib */; };
-		CAFA963A2189FE420083BE7C /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96392189FE420083BE7C /* libssl.dylib */; };
+		AAA00FA4218A4CBE00DCA1FF /* libcpprest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA3218A4CBE00DCA1FF /* libcpprest.a */; };
+		AAA00FA6218A4D2C00DCA1FF /* libodata-client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA5218A4D2C00DCA1FF /* libodata-client.a */; };
+		AAA00FA8218A4F8400DCA1FF /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA7218A4F8400DCA1FF /* libz.a */; };
+		AAA00FAA218A4FA700DCA1FF /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA9218A4FA700DCA1FF /* libxml2.a */; };
+		CAFA96362189FDBC0083BE7C /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */; };
+		CAFA96382189FE3C0083BE7C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96372189FE3C0083BE7C /* libcrypto.a */; };
+		CAFA963A2189FE420083BE7C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96392189FE420083BE7C /* libssl.a */; };
 		CAFA963D218A005A0083BE7C /* trippin_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAFA963B218A005A0083BE7C /* trippin_service.cpp */; };
-		CAFA9643218A13520083BE7C /* libcpprest.2.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9642218A13520083BE7C /* libcpprest.2.10.dylib */; };
-		CAFA9645218A15F20083BE7C /* libboost_chrono-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9644218A15F20083BE7C /* libboost_chrono-mt.dylib */; };
-		CAFA9647218A15FC0083BE7C /* libboost_system-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9646218A15FC0083BE7C /* libboost_system-mt.dylib */; };
+		CAFA9645218A15F20083BE7C /* libboost_chrono-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9644218A15F20083BE7C /* libboost_chrono-mt.a */; };
+		CAFA9647218A15FC0083BE7C /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9646218A15FC0083BE7C /* libboost_system-mt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,19 +59,17 @@
 		AA01771621899881006C8281 /* TripPinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripPinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA01771A21899881006C8281 /* TripPinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripPinUITests.m; sourceTree = "<group>"; };
 		AA01771C21899881006C8281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA017729218998BF006C8281 /* libodata-client.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libodata-client.1.0.dylib"; path = "../../../output/libodata-client.1.0.dylib"; sourceTree = "<group>"; };
-		CAFA96312189FD930083BE7C /* libboost_chrono.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_chrono.dylib; path = ../../../../../../../../usr/local/lib/libboost_chrono.dylib; sourceTree = "<group>"; };
-		CAFA96332189FDB00083BE7C /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
-		CAFA96352189FDBC0083BE7C /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../../../../usr/local/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
-		CAFA96372189FE3C0083BE7C /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib; sourceTree = "<group>"; };
-		CAFA96392189FE420083BE7C /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib; sourceTree = "<group>"; };
+		AAA00FA3218A4CBE00DCA1FF /* libcpprest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpprest.a; path = ../../../lib/casablanca/build.debug/Binaries/libcpprest.a; sourceTree = "<group>"; };
+		AAA00FA5218A4D2C00DCA1FF /* libodata-client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libodata-client.a"; path = "../../../output/libodata-client.a"; sourceTree = "<group>"; };
+		AAA00FA7218A4F8400DCA1FF /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../../../../../../../../opt/local/lib/libz.a; sourceTree = "<group>"; };
+		AAA00FA9218A4FA700DCA1FF /* libxml2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxml2.a; path = ../../../../../../../../opt/local/lib/libxml2.a; sourceTree = "<group>"; };
+		CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_thread-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
+		CAFA96372189FE3C0083BE7C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libcrypto.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.a; sourceTree = "<group>"; };
+		CAFA96392189FE420083BE7C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libssl.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libssl.a; sourceTree = "<group>"; };
 		CAFA963B218A005A0083BE7C /* trippin_service.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = trippin_service.cpp; path = ../../../ios/TripPin/TripPin/trippin_service.cpp; sourceTree = "<group>"; };
 		CAFA963C218A005A0083BE7C /* trippin_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trippin_service.h; path = ../../../ios/TripPin/TripPin/trippin_service.h; sourceTree = "<group>"; };
-		CAFA963E218A06030083BE7C /* libutilities.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libutilities.dylib; path = ../../../output/libutilities.dylib; sourceTree = "<group>"; };
-		CAFA9640218A06900083BE7C /* libcpprest.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcpprest.2.10.dylib; path = ../../../lib/casablanca/build.release/Binaries/libcpprest.2.10.dylib; sourceTree = "<group>"; };
-		CAFA9642218A13520083BE7C /* libcpprest.2.10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcpprest.2.10.dylib; path = ../../../lib/casablanca/build.debug/Binaries/libcpprest.2.10.dylib; sourceTree = "<group>"; };
-		CAFA9644218A15F20083BE7C /* libboost_chrono-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_chrono-mt.dylib"; path = "../../../../../../../../usr/local/lib/libboost_chrono-mt.dylib"; sourceTree = "<group>"; };
-		CAFA9646218A15FC0083BE7C /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../../../../../../../usr/local/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		CAFA9644218A15F20083BE7C /* libboost_chrono-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_chrono-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_chrono-mt.a"; sourceTree = "<group>"; };
+		CAFA9646218A15FC0083BE7C /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_system-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_system-mt.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,13 +77,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAFA9645218A15F20083BE7C /* libboost_chrono-mt.dylib in Frameworks */,
-				CAFA9643218A13520083BE7C /* libcpprest.2.10.dylib in Frameworks */,
-				CAFA96382189FE3C0083BE7C /* libcrypto.dylib in Frameworks */,
-				CAFA96362189FDBC0083BE7C /* libboost_thread-mt.dylib in Frameworks */,
-				AA01772A218998BF006C8281 /* libodata-client.1.0.dylib in Frameworks */,
-				CAFA9647218A15FC0083BE7C /* libboost_system-mt.dylib in Frameworks */,
-				CAFA963A2189FE420083BE7C /* libssl.dylib in Frameworks */,
+				AAA00FA6218A4D2C00DCA1FF /* libodata-client.a in Frameworks */,
+				AAA00FA4218A4CBE00DCA1FF /* libcpprest.a in Frameworks */,
+				CAFA9645218A15F20083BE7C /* libboost_chrono-mt.a in Frameworks */,
+				CAFA96382189FE3C0083BE7C /* libcrypto.a in Frameworks */,
+				CAFA96362189FDBC0083BE7C /* libboost_thread-mt.a in Frameworks */,
+				CAFA9647218A15FC0083BE7C /* libboost_system-mt.a in Frameworks */,
+				CAFA963A2189FE420083BE7C /* libssl.a in Frameworks */,
+				AAA00FAA218A4FA700DCA1FF /* libxml2.a in Frameworks */,
+				AAA00FA8218A4F8400DCA1FF /* libz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,17 +173,15 @@
 		AA017728218998BF006C8281 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CAFA9646218A15FC0083BE7C /* libboost_system-mt.dylib */,
-				CAFA9644218A15F20083BE7C /* libboost_chrono-mt.dylib */,
-				CAFA9640218A06900083BE7C /* libcpprest.2.10.dylib */,
-				CAFA9642218A13520083BE7C /* libcpprest.2.10.dylib */,
-				CAFA963E218A06030083BE7C /* libutilities.dylib */,
-				CAFA96392189FE420083BE7C /* libssl.dylib */,
-				CAFA96372189FE3C0083BE7C /* libcrypto.dylib */,
-				CAFA96352189FDBC0083BE7C /* libboost_thread-mt.dylib */,
-				CAFA96332189FDB00083BE7C /* libboost_system.dylib */,
-				CAFA96312189FD930083BE7C /* libboost_chrono.dylib */,
-				AA017729218998BF006C8281 /* libodata-client.1.0.dylib */,
+				AAA00FA9218A4FA700DCA1FF /* libxml2.a */,
+				AAA00FA7218A4F8400DCA1FF /* libz.a */,
+				AAA00FA5218A4D2C00DCA1FF /* libodata-client.a */,
+				AAA00FA3218A4CBE00DCA1FF /* libcpprest.a */,
+				CAFA9646218A15FC0083BE7C /* libboost_system-mt.a */,
+				CAFA9644218A15F20083BE7C /* libboost_chrono-mt.a */,
+				CAFA96392189FE420083BE7C /* libssl.a */,
+				CAFA96372189FE3C0083BE7C /* libcrypto.a */,
+				CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -475,6 +475,7 @@
 					/usr/local/lib,
 					/usr/local/opt/openssl/lib,
 					/usr/local/Cellar/openssl/1.0.2p/lib,
+					/opt/local/lib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyOrg.TripPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,6 +502,7 @@
 					/usr/local/lib,
 					/usr/local/opt/openssl/lib,
 					/usr/local/Cellar/openssl/1.0.2p/lib,
+					/opt/local/lib,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyOrg.TripPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";

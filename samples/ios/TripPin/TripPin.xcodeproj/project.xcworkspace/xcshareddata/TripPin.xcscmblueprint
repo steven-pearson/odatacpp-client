@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CCBCEA68F6A398C68C794AC3CB6D319123D5FDA3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CCBCEA68F6A398C68C794AC3CB6D319123D5FDA3" : 9223372036854775807,
+    "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5450C216-1CED-4D2B-9360-630FE93D4606",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CCBCEA68F6A398C68C794AC3CB6D319123D5FDA3" : "odatacpp-client\/",
+    "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D" : "odatacpp-client\/lib\/casablanca\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TripPin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "samples\/ios\/TripPin\/TripPin.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/steven-pearson\/odatacpp-client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CCBCEA68F6A398C68C794AC3CB6D319123D5FDA3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Microsoft\/cpprestsdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D"
+    }
+  ]
+}

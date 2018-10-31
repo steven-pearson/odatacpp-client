@@ -34,14 +34,18 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
 
 - (void) loadInitialData
 {
-    ::utility::string_t service_root(U("http://services.odata.org/V4/(S(2ldtxpshdgzdinhcyq5mfstr))/TripPinServiceRW/"));
+    ::utility::string_t service_root(U("https://services.odata.org/V4/(S(2ldtxpshdgzdinhcyq5mfstr))/TripPinServiceRW/"));
     
     auto service_context = std::make_shared<DefaultContainer>(service_root);
     
     auto query = service_context->create_airlines_query();
-    auto result = query->execute_query();
+    try {
+        auto result = query->execute_query();
     
-    airlines = result.get();
+        airlines = result.get();
+    } catch (exception e) {
+        cout << e.what();
+    }
 }
 
 - (void)viewDidLoad {
