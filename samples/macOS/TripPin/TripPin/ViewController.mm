@@ -32,9 +32,16 @@ using namespace Microsoft_OData_SampleService_Models_TripPin;
     ::utility::string_t service_root(U("https://services.odata.org/V4/(S(2ldtxpshdgzdinhcyq5mfstr))/TripPinServiceRW/"));
     
     auto service_context = std::make_shared<DefaultContainer>(service_root);
+    auto query = service_context->create_airlines_query()->execute_query();
     
-    airlines = service_context->create_airlines_query()->execute_query().get();
-    [self.tableView reloadData];
+    query.then([=](::pplx::task<std::vector<std::shared_ptr<Airline>>> value)
+                          {
+                              airlines = value.get();
+                              
+                              dispatch_async(dispatch_get_main_queue(), ^{
+                                  [self.tableView reloadData];
+                              });
+                          });
 }
 
 - (void)viewDidLoad {
