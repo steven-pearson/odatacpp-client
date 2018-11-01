@@ -1,5 +1,5 @@
-# Welcome to odatacpp_client
-odatacpp_client is an open-source C++ library that implements the Open Data Protocol (OData). It supports the [OData protocol version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html). It currently serves only client and client side proxy generation (code gen) aspects of OData. The server library is under development and will be included soon.
+# Welcome to odatacpp-client
+odatacpp-client is an open-source C++ library that implements the Open Data Protocol (OData). It supports the [OData protocol version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html). It currently serves only client and client side proxy generation (code gen) aspects of OData. The server library is under development and will be included soon.
 
 # Getting started
 
@@ -22,18 +22,18 @@ Currently the following target platforms are supported:
 2.ODataCpp depends on Casablanca (http://casablanca.codeplex.com) which is distributed as a NuGet package.
   Please restore this NuGet package before you open any solution:
 
-    cd odatacpp_client\msvc
+    cd odatacpp-client\msvc
     .nuget\nuget.exe restore odatacpp.sln
 
-3.Open 'odatacpp.sln' under 'odatacpp_client\msvc' with VS2012 and click 'Build Solution' in the 'BUILD' menu.
+3.Open 'odatacpp.sln' under 'odatacpp-client\msvc' with VS2012 and click 'Build Solution' in the 'BUILD' menu.
 
-4.Built libraries are placed under 'odatacpp_client\output\\\<Configuration\>' where '\<Configuration\>' could be either 'Debug' or 'Release' according to your build configuration in VS2012.
+4.Built libraries are placed under 'odatacpp-client\output\\\<Configuration\>' where '\<Configuration\>' could be either 'Debug' or 'Release' according to your build configuration in VS2012.
 
 ### Building on Windows with MSBuild
 
 1.Setup build environment for VS2012:
 
-    cd odatacpp_client
+    cd odatacpp-client
     powershell
     .\setup_ps_env_VS2012.ps1
 
@@ -43,15 +43,15 @@ Currently the following target platforms are supported:
 
 2.Here are some examples to invoke MSBuild:
 
-   1) Build Debug version of odatacpp_client libraries in parallel.
+   1) Build Debug version of odatacpp-client libraries in parallel.
 
     msbuild /m
 
-   2) Build Release version of odatacpp_client libraries.
+   2) Build Release version of odatacpp-client libraries.
 
     msbuild /p:Configuration=Release
 
-   3) Rebuild Debug version of odatacpp_client.
+   3) Rebuild Debug version of odatacpp-client.
 
     msbuild /t:Rebuild /p:Configuration=Debug
 
@@ -65,14 +65,14 @@ Currently the following target platforms are supported:
 
 1.After you have successfully built the libraries, you can run our functional and end-to-end tests to check the basic functionality.
 
-  1) Test the Debug version of odatacpp_client Libraries:
+  1) Test the Debug version of odatacpp-client Libraries:
 
-    cd odatacpp_client\output\Debug
+    cd odatacpp-client\output\Debug
     TestRunner.exe odata_functional_test.vs11d.dll odata_e2e_test.vs11d.dll
 
-  2) Test the Release version of odatacpp_client Libraries:
+  2) Test the Release version of odatacpp-client Libraries:
 
-    cd odatacpp_client\output\Release
+    cd odatacpp-client\output\Release
     TestRunner.exe odata_functional_test.vs11.dll odata_e2e_test.vs11.dll
 
   Don't worry about the failed tests as they are known issues and we will get them fixed in the future releases.
@@ -83,7 +83,7 @@ Currently the following target platforms are supported:
 
 2.Install the Homebrew package manager (http://brew.sh). Skip this step if you want to use your own package manager.
 
-3.Install the required packages to build odatacpp_client via Homebrew or your own package manager.
+3.Install the required packages to build odatacpp-client via Homebrew or your own package manager.
 
     brew install cmake git boost openssl ninja pkg-config 
 
@@ -100,7 +100,7 @@ Currently the following target platforms are supported:
     cmake ../Release -DCMAKE_BUILD_TYPE=Release
     make -j 4
 
-5.Return to the root folder of odatacpp_client and generate 'Makefile' using CMake.
+5.Return to the root folder of odatacpp-client and generate 'Makefile' using CMake.
 
     cd ../../..
     cmake -DCMAKE_BUILD_TYPE=Debug # replace 'Debug' with 'Release' if needed
@@ -114,14 +114,14 @@ Currently the following target platforms are supported:
 
 After successfully building the libraries, you can run the functional and end-to-end tests via the terminal.
 
-    cd odatacpp_client/output
+    cd odatacpp-client/output
     ./test_runner *tests*
 
 Please ignore the failed tests as they are already known to us and will be fixed in the future releases.
 
 ### Building for iOS
 
-Complete on Building on OS X. Return to the root folder of odatacpp_client, run following commands.
+Complete on Building on OS X. Return to the root folder of odatacpp-client, run following commands.
 
 
     cd lib/casablanca/Build_iOS
@@ -133,11 +133,11 @@ Complete on Building on OS X. Return to the root folder of odatacpp_client, run 
 The libraries (libodata-client.a and libodata-library.a) will be built in /ios/build.ios.
 
 # Documentation
-Please refer to our [wiki](https://github.com/OData/odatacpp_client/wiki) for documentation.
+Please refer to our [wiki](https://github.com/OData/odatacpp-client/wiki) for documentation.
 
 # Community
 ## Issue tracker
-To report bugs and require features, please use our [issue tracker](https://github.com/OData/odatacpp_client/issues?state=open).
+To report bugs and require features, please use our [issue tracker](https://github.com/OData/odatacpp-client/issues?state=open).
 
 ## Team blog
 Please visit http://blogs.msdn.com/b/odatateam/.
