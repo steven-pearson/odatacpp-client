@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="odata_primitive_value.h" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -105,6 +105,7 @@ private:
     ODATACPP_CLIENT_API void _try_get(bool& value) const;
     ODATACPP_CLIENT_API void _try_get(::utility::datetime& value) const;
 	ODATACPP_CLIENT_API void _try_get(::utility::seconds& value) const;
+    ODATACPP_CLIENT_API void _try_get(long double& value) const;
     ODATACPP_CLIENT_API void _try_get(double& value) const;
 	ODATACPP_CLIENT_API void _try_get(float& value) const;
 	ODATACPP_CLIENT_API void _try_get(int16_t& value) const;

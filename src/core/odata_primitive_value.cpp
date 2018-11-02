@@ -62,6 +62,12 @@ void odata_primitive_value::_try_get(double& value) const
     http::bind(propValue, value);
 }
 
+void odata_primitive_value::_try_get(long double& value) const
+{
+    const auto& propValue = to_string();
+    http::bind(propValue, value);
+}
+
 void odata_primitive_value::_try_get(float& value) const
 {
     const auto& propValue = to_string();
