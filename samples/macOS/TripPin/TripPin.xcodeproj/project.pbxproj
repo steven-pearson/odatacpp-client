@@ -18,6 +18,7 @@
 		AAA00FA6218A4D2C00DCA1FF /* libodata-client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA5218A4D2C00DCA1FF /* libodata-client.a */; };
 		AAA00FA8218A4F8400DCA1FF /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA7218A4F8400DCA1FF /* libz.a */; };
 		AAA00FAA218A4FA700DCA1FF /* libxml2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA00FA9218A4FA700DCA1FF /* libxml2.a */; };
+		CA07A1F5218C974D0004E520 /* northwind_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA07A1F4218C974D0004E520 /* northwind_service.cpp */; };
 		CAFA96362189FDBC0083BE7C /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */; };
 		CAFA96382189FE3C0083BE7C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96372189FE3C0083BE7C /* libcrypto.a */; };
 		CAFA963A2189FE420083BE7C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96392189FE420083BE7C /* libssl.a */; };
@@ -63,6 +64,8 @@
 		AAA00FA5218A4D2C00DCA1FF /* libodata-client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libodata-client.a"; path = "../../../output/libodata-client.a"; sourceTree = "<group>"; };
 		AAA00FA7218A4F8400DCA1FF /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = ../../../../../../../../opt/local/lib/libz.a; sourceTree = "<group>"; };
 		AAA00FA9218A4FA700DCA1FF /* libxml2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxml2.a; path = ../../../../../../../../opt/local/lib/libxml2.a; sourceTree = "<group>"; };
+		CA07A1F3218C974D0004E520 /* northwind_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = northwind_service.h; path = ../../../northwind_sample/northwind_service.h; sourceTree = "<group>"; };
+		CA07A1F4218C974D0004E520 /* northwind_service.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = northwind_service.cpp; path = ../../../northwind_sample/northwind_service.cpp; sourceTree = "<group>"; };
 		CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_thread-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
 		CAFA96372189FE3C0083BE7C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libcrypto.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.a; sourceTree = "<group>"; };
 		CAFA96392189FE420083BE7C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libssl.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libssl.a; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 		AA0176F721899881006C8281 /* TripPin */ = {
 			isa = PBXGroup;
 			children = (
+				CA07A1F4218C974D0004E520 /* northwind_service.cpp */,
+				CA07A1F3218C974D0004E520 /* northwind_service.h */,
 				CAFA963B218A005A0083BE7C /* trippin_service.cpp */,
 				CAFA963C218A005A0083BE7C /* trippin_service.h */,
 				AA0176F821899881006C8281 /* AppDelegate.h */,
@@ -321,6 +326,7 @@
 				AA01770021899881006C8281 /* ViewController.mm in Sources */,
 				AA0176FD21899881006C8281 /* main.m in Sources */,
 				CAFA963D218A005A0083BE7C /* trippin_service.cpp in Sources */,
+				CA07A1F5218C974D0004E520 /* northwind_service.cpp in Sources */,
 				AA0176FA21899881006C8281 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
