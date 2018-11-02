@@ -954,9 +954,9 @@ void odata_codegen_writer::generate_declare_common_functions_in_entity(::utility
 //DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, PersonID, personid);
 void odata_codegen_writer::generate_declare_class_keys_in_entity(::utility::ofstream_t& out, const class_info& _class_info, const std::vector<property_info>& keys)
 {
-	if (keys.size() > 4)
+	if (keys.size() > 9)
 	{
-		throw std::runtime_error("too many keys. max key size is 4. you have to add support for more keys param yourself in code_generation.h");
+		throw std::runtime_error("too many keys. max key size is 9. you have to add support for more keys param yourself in code_generation.h");
 	}
 
 	out << std::endl;
@@ -980,6 +980,26 @@ void odata_codegen_writer::generate_declare_class_keys_in_entity(::utility::ofst
 	else if (keys.size() == 4)
 	{
 		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_FOUR_PARAM(");
+	}
+	else if (keys.size() == 5)
+	{
+		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_FIVE_PARAM(");
+	}
+	else if (keys.size() == 6)
+	{
+		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_SIX_PARAM(");
+	}
+	else if (keys.size() == 7)
+	{
+		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_SEVEN_PARAM(");
+	}
+	else if (keys.size() == 8)
+	{
+		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_EIGHT_PARAM(");
+	}
+	else if (keys.size() == 9)
+	{
+		out << INDENT << U("DECLARE_GET_KEY_PROPERTY_STRING_NINE_PARAM(");
 	}
 
 	out << _class_info._base_class_name;

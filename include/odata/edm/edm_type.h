@@ -167,7 +167,8 @@ public:
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> DATETIMEOFFSET();
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> DURATION();
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> DECIMAL();
-	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> DOUBLE();
+    ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> DOUBLE();
+    ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> LONGDOUBLE();
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> GUID();
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> INT16();
 	ODATACPP_CLIENT_API static std::shared_ptr<edm_primitive_type> INT32();
@@ -194,6 +195,7 @@ private:
 	static std::shared_ptr<edm_primitive_type> _DATETIMEOFFSET;
 	static std::shared_ptr<edm_primitive_type> _DURATION;
 	static std::shared_ptr<edm_primitive_type> _DECIMAL;
+    static std::shared_ptr<edm_primitive_type> _LONGDOUBLE;
 	static std::shared_ptr<edm_primitive_type> _DOUBLE;
 	static std::shared_ptr<edm_primitive_type> _GUID;
 	static std::shared_ptr<edm_primitive_type> _INT16;

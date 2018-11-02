@@ -1301,6 +1301,96 @@ public: \
 		return key_string; \
 	}
 
+#define DECLARE_GET_KEY_PROPERTY_STRING_FIVE_PARAM(baseclass, Name_1, key_1, Name_2, key_2, Name_3, key_3, Name_4, key_4, Name_5, key_5) \
+public: \
+	::utility::string_t get_key_property_string(bool with_key_name = false) \
+	{ \
+	    ::utility::stringstream_t ostr; \
+		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5);\
+		::utility::string_t key_string = baseclass::get_key_property_string(true); \
+		if (key_string.empty()) \
+		{ \
+			key_string = ostr.str(); \
+		} \
+		else \
+		{ \
+			key_string += ostr.str(); \
+		} \
+		return key_string; \
+	}
+
+#define DECLARE_GET_KEY_PROPERTY_STRING_SIX_PARAM(baseclass, Name_1, key_1, Name_2, key_2, Name_3, key_3, Name_4, key_4, Name_5, key_5, Name_6, key_6) \
+public: \
+	::utility::string_t get_key_property_string(bool with_key_name = false) \
+	{ \
+	    ::utility::stringstream_t ostr; \
+		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6);\
+		::utility::string_t key_string = baseclass::get_key_property_string(true); \
+		if (key_string.empty()) \
+		{ \
+			key_string = ostr.str(); \
+		} \
+		else \
+		{ \
+			key_string += ostr.str(); \
+		} \
+		return key_string; \
+	}
+
+#define DECLARE_GET_KEY_PROPERTY_STRING_SEVEN_PARAM(baseclass, Name_1, key_1, Name_2, key_2, Name_3, key_3, Name_4, key_4, Name_5, key_5, Name_6, key_6, Name_7, key_7) \
+public: \
+	::utility::string_t get_key_property_string(bool with_key_name = false) \
+	{ \
+	    ::utility::stringstream_t ostr; \
+		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7);\
+		::utility::string_t key_string = baseclass::get_key_property_string(true); \
+		if (key_string.empty()) \
+		{ \
+			key_string = ostr.str(); \
+		} \
+		else \
+		{ \
+			key_string += ostr.str(); \
+		} \
+		return key_string; \
+	}
+
+#define DECLARE_GET_KEY_PROPERTY_STRING_EIGHT_PARAM(baseclass, Name_1, key_1, Name_2, key_2, Name_3, key_3, Name_4, key_4, Name_5, key_5, Name_6, key_6, Name_7, key_7, Name_8, key_8) \
+public: \
+	::utility::string_t get_key_property_string(bool with_key_name = false) \
+	{ \
+	    ::utility::stringstream_t ostr; \
+		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::utility::conversions::print_string(key_8);\
+		::utility::string_t key_string = baseclass::get_key_property_string(true); \
+		if (key_string.empty()) \
+		{ \
+			key_string = ostr.str(); \
+		} \
+		else \
+		{ \
+			key_string += ostr.str(); \
+		} \
+		return key_string; \
+	}
+
+#define DECLARE_GET_KEY_PROPERTY_STRING_NINE_PARAM(baseclass, Name_1, key_1, Name_2, key_2, Name_3, key_3, Name_4, key_4, Name_5, key_5, Name_6, key_6, Name_7, key_7, Name_8, key_8, Name_9, key_9) \
+public: \
+	::utility::string_t get_key_property_string(bool with_key_name = false) \
+	{ \
+	    ::utility::stringstream_t ostr; \
+		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::utility::conversions::print_string(key_8) << U(",") << U(#Name_9) << U("=") << ::utility::conversions::print_string(key_9);\
+		::utility::string_t key_string = baseclass::get_key_property_string(true); \
+		if (key_string.empty()) \
+		{ \
+			key_string = ostr.str(); \
+		} \
+		else \
+		{ \
+			key_string += ostr.str(); \
+		} \
+		return key_string; \
+	}
+
 #define DECLARE_OPERATION_IMPORT_P0(myclass, funcname, executor, isfunction) \
 public: \
 ::pplx::task<typename executor::return_type> funcname();

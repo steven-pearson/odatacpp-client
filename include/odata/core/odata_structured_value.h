@@ -112,6 +112,11 @@ public:
 		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DURATION(), ::utility::timespan::seconds_to_xml_duration(duration_value));
 	}
 
+    void set_value(const ::utility::string_t& property_name, long double double_precision_value)
+    {
+        m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::LONGDOUBLE(), ::odata::common::print_double(double_precision_value));
+    }
+    
 	void set_value(const ::utility::string_t& property_name, double double_precision_value)
 	{
 		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DOUBLE(), ::odata::common::print_double(double_precision_value));
