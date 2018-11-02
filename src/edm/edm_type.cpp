@@ -36,6 +36,7 @@ std::shared_ptr<edm_primitive_type> edm_primitive_type::_BYTE = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_DATETIMEOFFSET = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_DURATION = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_DECIMAL = nullptr;
+std::shared_ptr<edm_primitive_type> edm_primitive_type::_LONGDOUBLE = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_DOUBLE = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_GUID = nullptr;
 std::shared_ptr<edm_primitive_type> edm_primitive_type::_INT16 = nullptr;
@@ -129,6 +130,18 @@ std::shared_ptr<edm_primitive_type> edm_primitive_type::DOUBLE()
 	}
 
 	return _DOUBLE;
+}
+
+std::shared_ptr<edm_primitive_type> edm_primitive_type::LONGDOUBLE()
+{
+    std::lock_guard<std::mutex> lock(mutex());
+    
+    if (!_LONGDOUBLE)
+    {
+        _LONGDOUBLE.reset(new edm_primitive_type(U("Edm.Double"), edm_primitive_type_kind_t::Double));
+    }
+    
+    return _LONGDOUBLE;
 }
 
 std::shared_ptr<edm_primitive_type> edm_primitive_type::GUID()
