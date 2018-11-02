@@ -13,7 +13,7 @@ END_ENTITY_DESTRUCTOR(Summary_of_Sales_by_Quarter)
 
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Quarter, shippeddate, ShippedDate, ::utility::datetime);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Quarter, orderid, OrderID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Quarter, subtotal, Subtotal, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Quarter, subtotal, Subtotal, long double);
 
 IMPLEMENT_EDM_INFO(Summary_of_Sales_by_Quarter, NorthwindModel, Summary_of_Sales_by_Quarter)
 
@@ -37,7 +37,7 @@ END_ENTITY_CONSTRUCTOR(Sales_Totals_by_Amount, type_base)
 BEGIN_ENTITY_DESTRUCTOR(Sales_Totals_by_Amount)
 END_ENTITY_DESTRUCTOR(Sales_Totals_by_Amount)
 
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_Totals_by_Amount, saleamount, SaleAmount, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_Totals_by_Amount, saleamount, SaleAmount, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_Totals_by_Amount, companyname, CompanyName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_Totals_by_Amount, orderid, OrderID, int32_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_Totals_by_Amount, shippeddate, ShippedDate, ::utility::datetime);
@@ -65,7 +65,7 @@ END_ENTITY_CONSTRUCTOR(Products_Above_Average_Price, type_base)
 BEGIN_ENTITY_DESTRUCTOR(Products_Above_Average_Price)
 END_ENTITY_DESTRUCTOR(Products_Above_Average_Price)
 
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Products_Above_Average_Price, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Products_Above_Average_Price, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Products_Above_Average_Price, productname, ProductName, ::utility::string_t);
 
 IMPLEMENT_EDM_INFO(Products_Above_Average_Price, NorthwindModel, Products_Above_Average_Price)
@@ -87,7 +87,7 @@ END_ENTITY_CONSTRUCTOR(Product_Sales_for_1997, type_base)
 BEGIN_ENTITY_DESTRUCTOR(Product_Sales_for_1997)
 END_ENTITY_DESTRUCTOR(Product_Sales_for_1997)
 
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product_Sales_for_1997, productsales, ProductSales, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product_Sales_for_1997, productsales, ProductSales, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product_Sales_for_1997, categoryname, CategoryName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product_Sales_for_1997, productname, ProductName, ::utility::string_t);
 
@@ -132,7 +132,7 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, shipcity, ShipCity, :
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, shippostalcode, ShipPostalCode, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, city, City, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, region, Region, ::utility::string_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, freight, Freight, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, freight, Freight, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, shipregion, ShipRegion, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Orders_Qry, postalcode, PostalCode, ::utility::string_t);
 
@@ -192,7 +192,7 @@ BEGIN_ENTITY_DESTRUCTOR(Category_Sales_for_1997)
 END_ENTITY_DESTRUCTOR(Category_Sales_for_1997)
 
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Category_Sales_for_1997, categoryname, CategoryName, ::utility::string_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Category_Sales_for_1997, categorysales, CategorySales, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Category_Sales_for_1997, categorysales, CategorySales, long double);
 
 IMPLEMENT_EDM_INFO(Category_Sales_for_1997, NorthwindModel, Category_Sales_for_1997)
 
@@ -220,11 +220,11 @@ END_ENTITY_DESTRUCTOR(Order_Details_Extended)
 
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, productid, ProductID, int32_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, orderid, OrderID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, discount, Discount, float);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, productname, ProductName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, quantity, Quantity, int16_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, extendedprice, ExtendedPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Details_Extended, extendedprice, ExtendedPrice, long double);
 
 IMPLEMENT_EDM_INFO(Order_Details_Extended, NorthwindModel, Order_Details_Extended)
 
@@ -268,7 +268,7 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, pro
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, quantityperunit, QuantityPerUnit, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, supplierid, SupplierID, int32_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, categoryid, CategoryID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, discontinued, Discontinued, bool);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, unitsinstock, UnitsInStock, int16_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Alphabetical_list_of_product, reorderlevel, ReorderLevel, int16_t);
@@ -344,7 +344,7 @@ END_ENTITY_CONSTRUCTOR(Order_Subtotal, type_base)
 BEGIN_ENTITY_DESTRUCTOR(Order_Subtotal)
 END_ENTITY_DESTRUCTOR(Order_Subtotal)
 
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Subtotal, subtotal, Subtotal, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Subtotal, subtotal, Subtotal, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Subtotal, orderid, OrderID, int32_t);
 
 IMPLEMENT_EDM_INFO(Order_Subtotal, NorthwindModel, Order_Subtotal)
@@ -418,7 +418,7 @@ BEGIN_ENTITY_DESTRUCTOR(Sales_by_Category)
 END_ENTITY_DESTRUCTOR(Sales_by_Category)
 
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_by_Category, categoryid, CategoryID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_by_Category, productsales, ProductSales, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_by_Category, productsales, ProductSales, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_by_Category, categoryname, CategoryName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Sales_by_Category, productname, ProductName, ::utility::string_t);
 
@@ -486,7 +486,7 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, shippostalcode, ShipPostal
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, shipcity, ShipCity, ::utility::string_t);
 IMPLEMENT_COLLECTION_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Order, order_details, Order_Details, Order_Detail);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, shipname, ShipName, ::utility::string_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, freight, Freight, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, freight, Freight, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, shipregion, ShipRegion, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order, shipaddress, ShipAddress, ::utility::string_t);
 IMPLEMENT_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Order, shipper, Shipper, Shipper);
@@ -554,7 +554,7 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, quantityperunit, Quantit
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, categoryid, CategoryID, int32_t);
 IMPLEMENT_COLLECTION_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Product, order_details, Order_Details, Order_Detail);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, productid, ProductID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, supplierid, SupplierID, int32_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Product, reorderlevel, ReorderLevel, int16_t);
 IMPLEMENT_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Product, category, Category, Category);
@@ -630,7 +630,7 @@ END_ENTITY_DESTRUCTOR(Summary_of_Sales_by_Year)
 
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Year, shippeddate, ShippedDate, ::utility::datetime);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Year, orderid, OrderID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Year, subtotal, Subtotal, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Summary_of_Sales_by_Year, subtotal, Subtotal, long double);
 
 IMPLEMENT_EDM_INFO(Summary_of_Sales_by_Year, NorthwindModel, Summary_of_Sales_by_Year)
 
@@ -766,7 +766,7 @@ END_ENTITY_DESTRUCTOR(Order_Detail)
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, quantity, Quantity, int16_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, productid, ProductID, int32_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, orderid, OrderID, int32_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, discount, Discount, float);
 IMPLEMENT_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, order, Order, Order);
 IMPLEMENT_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(Order_Detail, product, Product, Product);
@@ -863,7 +863,7 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, shippeddate, ShippedDate
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, shipaddress, ShipAddress, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, quantity, Quantity, int16_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, shipname, ShipName, ::utility::string_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, unitprice, UnitPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, unitprice, UnitPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, shipregion, ShipRegion, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, discount, Discount, float);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, postalcode, PostalCode, ::utility::string_t);
@@ -879,11 +879,11 @@ IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, orderid, OrderID, int32_
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, customerid, CustomerID, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, city, City, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, region, Region, ::utility::string_t);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, extendedprice, ExtendedPrice, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, extendedprice, ExtendedPrice, long double);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, shippername, ShipperName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, productname, ProductName, ::utility::string_t);
 IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, requireddate, RequiredDate, ::utility::datetime);
-IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, freight, Freight, double);
+IMPLEMENT_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(Invoice, freight, Freight, long double);
 
 IMPLEMENT_EDM_INFO(Invoice, NorthwindModel, Invoice)
 

@@ -74,7 +74,7 @@ public:
 
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shippeddate, ShippedDate, ::utility::datetime);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, long double);
 
     DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, OrderID, orderid);
 };
@@ -87,7 +87,7 @@ public:
     DECLARE_EDM_INFO();
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(saleamount, SaleAmount, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(saleamount, SaleAmount, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(companyname, CompanyName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shippeddate, ShippedDate, ::utility::datetime);
@@ -103,7 +103,7 @@ public:
     DECLARE_EDM_INFO();
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productname, ProductName, ::utility::string_t);
 
     DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, ProductName, productname);
@@ -117,7 +117,7 @@ public:
     DECLARE_EDM_INFO();
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productsales, ProductSales, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productsales, ProductSales, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryname, CategoryName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productname, ProductName, ::utility::string_t);
 
@@ -149,7 +149,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shippostalcode, ShipPostalCode, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(city, City, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(region, Region, ::utility::string_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipregion, ShipRegion, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(postalcode, PostalCode, ::utility::string_t);
 
@@ -165,7 +165,7 @@ public:
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryname, CategoryName, ::utility::string_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categorysales, CategorySales, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categorysales, CategorySales, long double);
 
     DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, CategoryName, categoryname);
 };
@@ -180,11 +180,11 @@ public:
 
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productid, ProductID, int32_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(discount, Discount, float);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productname, ProductName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(quantity, Quantity, int16_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(extendedprice, ExtendedPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(extendedprice, ExtendedPrice, long double);
 
     DECLARE_GET_KEY_PROPERTY_STRING_SIX_PARAM(type_base, ProductID, productid, OrderID, orderid, UnitPrice, unitprice, Discount, discount, ProductName, productname, Quantity, quantity);
 };
@@ -203,7 +203,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(quantityperunit, QuantityPerUnit, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(supplierid, SupplierID, int32_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryid, CategoryID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(discontinued, Discontinued, bool);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitsinstock, UnitsInStock, int16_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(reorderlevel, ReorderLevel, int16_t);
@@ -237,7 +237,7 @@ public:
     DECLARE_EDM_INFO();
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
 
     DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, OrderID, orderid);
@@ -283,7 +283,7 @@ public:
     ENABLE_PROPERTY_IN_ENTITY_MAPPING();
 
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryid, CategoryID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productsales, ProductSales, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productsales, ProductSales, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryname, CategoryName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productname, ProductName, ::utility::string_t);
 
@@ -327,7 +327,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipcity, ShipCity, ::utility::string_t);
     DECLARE_COLLECTION_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(order_details, Order_Details, Order_Detail);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipname, ShipName, ::utility::string_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipregion, ShipRegion, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipaddress, ShipAddress, ::utility::string_t);
     DECLARE_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(shipper, Shipper, Shipper);
@@ -352,7 +352,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(categoryid, CategoryID, int32_t);
     DECLARE_COLLECTION_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(order_details, Order_Details, Order_Detail);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productid, ProductID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(supplierid, SupplierID, int32_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(reorderlevel, ReorderLevel, int16_t);
     DECLARE_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(category, Category, Category);
@@ -387,7 +387,7 @@ public:
 
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shippeddate, ShippedDate, ::utility::datetime);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(subtotal, Subtotal, long double);
 
     DECLARE_GET_KEY_PROPERTY_STRING_ONE_PARAM(type_base, OrderID, orderid);
 };
@@ -453,7 +453,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(quantity, Quantity, int16_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productid, ProductID, int32_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(orderid, OrderID, int32_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(discount, Discount, float);
     DECLARE_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(order, Order, Order);
     DECLARE_NAVIGATION_PROPERTY_IN_ENTITY_MAPPING(product, Product, Product);
@@ -499,7 +499,7 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipaddress, ShipAddress, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(quantity, Quantity, int16_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipname, ShipName, ::utility::string_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(unitprice, UnitPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shipregion, ShipRegion, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(discount, Discount, float);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(postalcode, PostalCode, ::utility::string_t);
@@ -515,11 +515,11 @@ public:
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(customerid, CustomerID, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(city, City, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(region, Region, ::utility::string_t);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(extendedprice, ExtendedPrice, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(extendedprice, ExtendedPrice, long double);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(shippername, ShipperName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(productname, ProductName, ::utility::string_t);
     DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(requireddate, RequiredDate, ::utility::datetime);
-    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, double);
+    DECLARE_PRIMITIVE_PROPERTY_IN_ENTITY_MAPPING(freight, Freight, long double);
 
     DECLARE_GET_KEY_PROPERTY_STRING_NINE_PARAM(type_base, Quantity, quantity, UnitPrice, unitprice, Discount, discount, ProductID, productid, CustomerName, customername, Salesperson, salesperson, OrderID, orderid, ShipperName, shippername, ProductName, productname);
 };
