@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="odata_payload.h" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -46,7 +46,7 @@ public:
 		m_odata_values.insert(m_odata_values.end(), values.begin(), values.end()); 
 	}
 
-	const int value_count() const
+	const size_t value_count() const
 	{
 		return m_odata_values.size();
 	}

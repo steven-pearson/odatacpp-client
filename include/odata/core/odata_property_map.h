@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="odata_property_map.h" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -139,7 +139,7 @@ public:
         return m_properties.cend();
     }
 
-	int size() const 
+	size_t size() const
 	{
 		return m_properties.size();
 	}

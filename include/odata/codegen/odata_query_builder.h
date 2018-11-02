@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="odata_query_builder.h" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -80,7 +80,7 @@ public:
 	{
 		if (m_root_query_path)
 		{
-			return std::move(::web::http::uri::encode_uri((m_root_query_path->evaluate_query_path())));
+			return ::web::http::uri::encode_uri((m_root_query_path->evaluate_query_path()));
 		}
 
 		return U("");
