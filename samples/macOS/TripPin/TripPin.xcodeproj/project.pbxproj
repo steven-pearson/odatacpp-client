@@ -22,7 +22,6 @@
 		CAFA96362189FDBC0083BE7C /* libboost_thread-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */; };
 		CAFA96382189FE3C0083BE7C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96372189FE3C0083BE7C /* libcrypto.a */; };
 		CAFA963A2189FE420083BE7C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA96392189FE420083BE7C /* libssl.a */; };
-		CAFA963D218A005A0083BE7C /* trippin_service.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CAFA963B218A005A0083BE7C /* trippin_service.cpp */; };
 		CAFA9645218A15F20083BE7C /* libboost_chrono-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9644218A15F20083BE7C /* libboost_chrono-mt.a */; };
 		CAFA9647218A15FC0083BE7C /* libboost_system-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA9646218A15FC0083BE7C /* libboost_system-mt.a */; };
 /* End PBXBuildFile section */
@@ -69,8 +68,6 @@
 		CAFA96352189FDBC0083BE7C /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_thread-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
 		CAFA96372189FE3C0083BE7C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libcrypto.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.a; sourceTree = "<group>"; };
 		CAFA96392189FE420083BE7C /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = libssl.a; path = ../../../../../../../../usr/local/Cellar/openssl/1.0.2p/lib/libssl.a; sourceTree = "<group>"; };
-		CAFA963B218A005A0083BE7C /* trippin_service.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = trippin_service.cpp; path = ../../../ios/TripPin/TripPin/trippin_service.cpp; sourceTree = "<group>"; };
-		CAFA963C218A005A0083BE7C /* trippin_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trippin_service.h; path = ../../../ios/TripPin/TripPin/trippin_service.h; sourceTree = "<group>"; };
 		CAFA9644218A15F20083BE7C /* libboost_chrono-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_chrono-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_chrono-mt.a"; sourceTree = "<group>"; };
 		CAFA9646218A15FC0083BE7C /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.a"; name = "libboost_system-mt.a"; path = "../../../../../../../../usr/local/lib/libboost_system-mt.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,8 +132,6 @@
 			children = (
 				CA07A1F4218C974D0004E520 /* northwind_service.cpp */,
 				CA07A1F3218C974D0004E520 /* northwind_service.h */,
-				CAFA963B218A005A0083BE7C /* trippin_service.cpp */,
-				CAFA963C218A005A0083BE7C /* trippin_service.h */,
 				AA0176F821899881006C8281 /* AppDelegate.h */,
 				AA0176F921899881006C8281 /* AppDelegate.m */,
 				AA0176FE21899881006C8281 /* ViewController.h */,
@@ -325,7 +320,6 @@
 			files = (
 				AA01770021899881006C8281 /* ViewController.mm in Sources */,
 				AA0176FD21899881006C8281 /* main.m in Sources */,
-				CAFA963D218A005A0083BE7C /* trippin_service.cpp in Sources */,
 				CA07A1F5218C974D0004E520 /* northwind_service.cpp in Sources */,
 				AA0176FA21899881006C8281 /* AppDelegate.m in Sources */,
 			);
