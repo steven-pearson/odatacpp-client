@@ -1233,15 +1233,15 @@ public: \
 		if (key_string.empty()) \
 		{ \
 		    if (with_key_name) \
-			    ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1); \
+			    ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1); \
 			else \
-		        ostr << ::utility::conversions::print_string(key_1); \
+		        ostr << ::odata::common::print_string(key_1); \
 			key_string = ostr.str(); \
 		} \
 		else \
 		{ \
 		    key_string = baseclass::get_key_property_string(true); \
-			ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1); \
+			ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1); \
 			key_string += U(",") + ostr.str(); \
 		} \
 		return key_string; \
@@ -1252,7 +1252,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") + ::utility::conversions::print_string(key_2); \
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") + ::odata::common::print_string(key_2); \
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1270,7 +1270,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1288,7 +1288,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1306,7 +1306,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::odata::common::print_string(key_5);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1324,7 +1324,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::odata::common::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::odata::common::print_string(key_6);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1342,7 +1342,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::odata::common::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::odata::common::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::odata::common::print_string(key_7);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1360,7 +1360,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::utility::conversions::print_string(key_8);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::odata::common::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::odata::common::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::odata::common::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::odata::common::print_string(key_8);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \
@@ -1378,7 +1378,7 @@ public: \
 	::utility::string_t get_key_property_string(bool with_key_name = false) \
 	{ \
 	    ::utility::stringstream_t ostr; \
-		ostr << U(#Name_1) << U("=") << ::utility::conversions::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::utility::conversions::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::utility::conversions::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::utility::conversions::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::utility::conversions::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::utility::conversions::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::utility::conversions::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::utility::conversions::print_string(key_8) << U(",") << U(#Name_9) << U("=") << ::utility::conversions::print_string(key_9);\
+		ostr << U(#Name_1) << U("=") << ::odata::common::print_string(key_1) << U(",") << U(#Name_2) << U("=") << ::odata::common::print_string(key_2) << U(",") << U(#Name_3) << U("=") << ::odata::common::print_string(key_3) << U(",") << U(#Name_4) << U("=") << ::odata::common::print_string(key_4) << U(",") << U(#Name_5) << U("=") << ::odata::common::print_string(key_5) << U(",") << U(#Name_6) << U("=") << ::odata::common::print_string(key_6) << U(",") << U(#Name_7) << U("=") << ::odata::common::print_string(key_7) << U(",") << U(#Name_8) << U("=") << ::odata::common::print_string(key_8) << U(",") << U(#Name_9) << U("=") << ::odata::common::print_string(key_9);\
 		::utility::string_t key_string = baseclass::get_key_property_string(true); \
 		if (key_string.empty()) \
 		{ \

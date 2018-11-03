@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="utility.cpp" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -81,7 +81,7 @@ bool is_relative_path(const ::utility::string_t& _root_url, const ::utility::str
 	return path.find(root_url) != 0 ? true : false;
 }
 
-::utility::string_t print_double(const double& db, int precision)
+::utility::string_t print_string(const double& db, int precision)
 {
     ::utility::ostringstream_t oss;
 	oss << std::setiosflags(std::ios::fixed) << std::setiosflags(std::ios::right) << std::setprecision(precision)  << db;
@@ -114,7 +114,88 @@ bool is_relative_path(const ::utility::string_t& _root_url, const ::utility::str
     return output;
 }
 
-::utility::string_t print_float(const float& db, int precision)
+::utility::string_t print_string(const ::utility::string_t& db)
+{
+    return db;
+}
+    
+::utility::string_t print_string(const long double& db, int precision)
+{
+    ::utility::ostringstream_t oss;
+    oss << std::setiosflags(std::ios::fixed) << std::setiosflags(std::ios::right) << std::setprecision(precision)  << db;
+    if (oss.bad())
+    {
+        throw std::bad_cast();
+    }
+    
+    ::utility::string_t output = oss.str();
+    int dot = output.find(U('.'));
+    if (dot > 0)
+    {
+        int i = output.length() - 1;
+        for (i = output.length() - 1; i > dot; i--)
+        {
+            if (output[i] != U('0'))
+            {
+                break;
+            }
+        }
+        
+        if (i == dot)
+        {
+            i++;
+        }
+        
+        output = output.substr(0, i + 1);
+    }
+    
+    return output;
+}
+    
+    
+::utility::string_t print_string(const int64_t& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+    
+::utility::string_t print_string(const int32_t& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const int16_t& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const bool& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const char& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const unsigned char& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const uint64_t& db) {
+    std::stringstream stream;
+    stream << db;
+    return stream.str();
+}
+
+::utility::string_t print_string(const float& db, int precision)
 {
     ::utility::ostringstream_t oss;
 	oss << std::setiosflags(std::ios::fixed) << std::setiosflags(std::ios::right) << std::setprecision(precision)  << db;

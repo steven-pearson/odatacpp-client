@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="odata_structured_value.h" company="Microsoft">
 //      Copyright (C) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 // </copyright>
@@ -74,22 +74,22 @@ public:
 
 	void set_value(const ::utility::string_t& property_name, float float_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::SINGLE(), ::odata::common::print_float(float_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::SINGLE(), ::odata::common::print_string(float_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, unsigned char ubyte_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BYTE(), ::utility::conversions::print_string(ubyte_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BYTE(), ::odata::common::print_string(ubyte_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, char byte_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BYTE(), ::utility::conversions::print_string(byte_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BYTE(), ::odata::common::print_string(byte_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, int32_t int32_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT32(), ::utility::conversions::print_string(int32_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT32(), ::odata::common::print_string(int32_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, const std::vector<unsigned char>& binary_data)
@@ -99,7 +99,7 @@ public:
 
 	void set_value(const ::utility::string_t& property_name, bool boolean_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BOOLEAN(), ::utility::conversions::print_string(boolean_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BOOLEAN(), ::odata::common::print_string(boolean_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, ::utility::datetime datetime_value)
@@ -114,27 +114,27 @@ public:
 
     void set_value(const ::utility::string_t& property_name, long double double_precision_value)
     {
-        m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::LONGDOUBLE(), ::odata::common::print_double(double_precision_value));
+        m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::LONGDOUBLE(), ::odata::common::print_string(double_precision_value));
     }
     
 	void set_value(const ::utility::string_t& property_name, double double_precision_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DOUBLE(), ::odata::common::print_double(double_precision_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DOUBLE(), ::odata::common::print_string(double_precision_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, int64_t int64_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::utility::conversions::print_string(int64_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::odata::common::print_string(int64_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, uint64_t u_int64_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::utility::conversions::print_string(u_int64_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::odata::common::print_string(u_int64_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, int16_t int16_value)
 	{
-		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT16(), ::utility::conversions::print_string(int16_value));
+		m_properties[property_name] = std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT16(), ::odata::common::print_string(int16_value));
 	}
 
 	void set_value(const ::utility::string_t& property_name, const ::utility::char_t* string_value)

@@ -21,12 +21,12 @@ public:
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(int16_t int16_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT16(), ::utility::conversions::print_string(int16_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT16(), ::odata::common::print_string(int16_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(int32_t int32_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT32(), ::utility::conversions::print_string(int32_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT32(), ::odata::common::print_string(int32_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(const std::vector<unsigned char>& binary_data)
@@ -36,7 +36,7 @@ public:
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(bool boolean_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BOOLEAN(), ::utility::conversions::print_string(boolean_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::BOOLEAN(), ::odata::common::print_string(boolean_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(::utility::datetime datetime_value)
@@ -51,22 +51,22 @@ public:
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(double double_precision_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DOUBLE(), ::odata::common::print_double(double_precision_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::DOUBLE(), ::odata::common::print_string(double_precision_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(float float_precision_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::SINGLE(), ::odata::common::print_float(float_precision_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::SINGLE(), ::odata::common::print_string(float_precision_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(int64_t int64_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::utility::conversions::print_string(int64_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::odata::common::print_string(int64_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(uint64_t u_int64_value)
 	{
-		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::utility::conversions::print_string(u_int64_value));
+		return std::make_shared<odata_primitive_value>(::odata::edm::edm_primitive_type::INT64(), ::odata::common::print_string(u_int64_value));
 	}
 
 	static std::shared_ptr<odata_primitive_value> make_primitive_value(::utility::string_t string_value)
